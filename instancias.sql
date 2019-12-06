@@ -68,6 +68,65 @@ insert into card values("Nissa, Who Shakes the World", "Whenever you tap a Fores
 insert into card values("Chandra, Awakened Inferno", "This spell can’t be countered. +2: Each opponent gets an emblem with “At the beginning of your upkeep, this emblem deals 1 damage to you.” −3: Chandra, Awakened Inferno deals 3 damage to each non-Elemental creature. −X: Chandra, Awakened Inferno deals X damage to target creature or planeswalker. If a permanent dealt damage this way would die this turn, exile it instead.", "4RR");
 insert into card values("Teferi, Hero of Dominaria", "+1: Draw a card. At the beginning of the next end step, untap up to two lands. −3: Put target nonland permanent into its owner’s library third from the top. −8: You get an emblem with “Whenever you draw a card, exile target permanent an opponent controls.”", "3WU");
 insert into card values("Sorin, Imperious Bloodlord", "+1: Target creature you control gains deathtouch and lifelink until end of turn. If it’s a Vampire, put a +1/+1 counter on it. +1: You may sacrifice a Vampire. When you do, Sorin, Imperious Bloodlord deals 3 damage to any target and you gain 3 life. −3: You may put a Vampire creature card from your hand onto the battlefield.", "2B");
+----------------------------------------------------------------------------------------------------------------------------------------------
+-- CARD_HAS_COLOR
+
+insert into card_has_color values("Llanowar Elves","green");
+insert into card_has_color values("Frilled Mystic","green");
+insert into card_has_color values("Frilled Mystic","blue");
+insert into card_has_color values("Zegana, Utopian Speaker","green");
+insert into card_has_color values("Zegana, Utopian Speaker","blue");
+insert into card_has_color values("Merfolk Trickster","blue");
+insert into card_has_color values("Scorch Spitter","red");
+insert into card_has_color values("Skarrgan Hellkite","red");
+insert into card_has_color values("Gruul Spellbreaker","green");
+insert into card_has_color values("Gruul Spellbreaker","red");
+insert into card_has_color values("Lyra Dawnbringer","white");
+insert into card_has_color values("Hero of Precinct One","white");
+insert into card_has_color values("Knight of the Ebon Legion","black");
+insert into card_has_color values("Basilica Bell-Haunt","white");
+insert into card_has_color values("Basilica Bell-Haunt","black");
+
+insert into card_has_color values("Ancestral Recall","blue");
+insert into card_has_color values("Eye of Nowhere","blue");
+insert into card_has_color values("Ethereal Haze","white");
+insert into card_has_color values("Lavaball Traps","red");
+insert into card_has_color values("Baloth Cage Trap","green");
+insert into card_has_color values("Lightning Bolt","red");
+insert into card_has_color values("Thought Erasure","blue");	
+insert into card_has_color values("Thought Erasure","black");	
+insert into card_has_color values("Cast Down","black");	
+insert into card_has_color values("Escape to the Wild","green");	
+insert into card_has_color values("Escape to the Wild","red");
+
+insert into card_has_color values ("Forest","colorless");
+insert into card_has_color values ("Mountain","colorless");
+insert into card_has_color values ("Island","colorless");
+insert into card_has_color values ("Plains","colorless");
+insert into card_has_color values ("Swamp","colorless");
+insert into card_has_color values ("Dimir Guildgate","colorless");
+insert into card_has_color values ("Gruul Guildgate","colorless");
+insert into card_has_color values ("Desert of the True","colorless");
+insert into card_has_color values ("Endless Sands","colorless");
+
+
+insert into card_has_color values ("History of Benalia","white");
+insert into card_has_color values ("The Mirari Conjecture", "blue");
+insert into card_has_color values ("Embercleave","red");
+insert into card_has_color values ("Giant's Skewer","black"); 
+insert into card_has_color values("Black Lotus", "colorless");
+insert into card_has_color values("Sol Ring", "colorless");
+insert into card_has_color values("Experimental Frenzy", "red");
+
+insert into card values("Nissa, Who Shakes the World", "green");
+insert into card values("Chandra, Awakened Inferno", "red");
+insert into card values("Teferi, Hero of Dominaria", "blue");
+insert into card values("Teferi, Hero of Dominaria","white");
+insert into card values("Sorin, Imperious Bloodlord", "black");
+
+
+
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -240,8 +299,6 @@ insert into characterw values("Nissa Revane","Elf","Zendikar");
 insert into characterw values("Chandra Nalaar","Human", "Kaladesh");
 insert into characterw values("Teferi","Human", "Dominaria");
 insert into characterw values("Sorin Markov","Vampire","Innistrad");
-
-
 
 
 -- PLANESWALKER
