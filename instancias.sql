@@ -8,3 +8,16 @@ INSERT into color values("black", "Discarding, Reanimation, Regeneration, Sacrif
 INSERT into color values("colorless", "Artifacts", "An object (a card or spell) with no colored mana symbols in their mana costs is colorless. Most artifacts are colorless, as are some creatures like the Eldrazi and some non-permanents like Ghostfire. Karn and Ugin are colorless planeswalkers. Colorless gets access to pretty much everything, but at inefficient mana costs. For example, the destruction of permanents costs a minimum of {7}.");
 
 -- SELECT * from color
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+-- FORMAT 
+
+INSERT into format values("standard","Once a year, with the release of the new fall set, the two oldest blocks still legal in Standard rotate out of the format. Because of this, no set is Standard-legal for more than two years. For example, When Ixalan set released in fall 2017, Battle for Zendikar, Oath of the Gatewatch, Shadows over Innistrad, Eldritch Moon, and Welcome Deck 2016 (which counted as a part Shadows over Innistrad in rotation) rotated out of Standard.",'1995-01-10');
+INSERT into format values("modern","Modern is a constructed format that allows expansion sets, core sets, and Modern Horizons; from Eighth Edition forward, save for the Modern ban list.[1] The modern format thus encompasses all cards that have been printed in a core or expansion set using the modern card frame (plus some others from Time Spiral)." ,"2011-05-19");
+INSERT into format values("legacy","Legacy, formerly known as Type 1.5, is an eternal format with a more limited card pool than Vintage. Whereas Vintage only bans dexterity cards, cards related to ante, Conspiracy-type, or subgame cards, Legacy has a considerable number of cards banned solely due to their power. Fast mana is more difficult to generate thereby causing slightly slower games.","2016-05-20");
+INSERT into format values("vintage","Vintage, originally known as Type I, is an eternal format that allows for the use of all cards, save cards with silver borders (like Un-sets) and/or having a non-Standard Magic back (other than Double-Faced Card/Meld Card), as well as certain cards banned for causing problems in sanctioned tournaments.[1] Additionally, a number of cards are restricted to a maximum of one copy between a player's deck and sideboard due to their power.","1995-01-01");
+
+-- SELECT * from format
+
+----------------------------------------------------------------------------------------------------------------------------------------------
