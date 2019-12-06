@@ -4,7 +4,7 @@ create table CARD
 	cardtext  		    varchar(500)    not null,	
 	manaC	    		varchar(10) not null,
 	primary key(name)
-);#
+);
 
 
 -- ---------------------------------------------------------------------
@@ -98,7 +98,7 @@ create table LAND_IS
 create table OBJECT
 (
    name varchar(30) not null,
-   structure varchar(10) not null,
+   structure varchar(12) not null,
    foreign key (name) references CARD(name),
    primary key(name)   
 );

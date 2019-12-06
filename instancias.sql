@@ -56,7 +56,13 @@ insert into card values ("Gruul Guildgate","Gruul Guildgate enters the battlefie
 insert into card values ("Desert of the True","Desert of the True enters the battlefield tapped. {T}: Add {W}. Cycling {1}{W} ({1}{W}, Discard this card: Draw a card.)","");
 insert into card values ("Endless Sands","{T}: Add {C}. {2}, {T}: Exile target creature you control. {4}, {T}, Sacrifice Endless Sands: Return each creature card exiled with Endless Sands to the battlefield under its owner’s control.","");
 
-
+insert into card values ("History of Benalia","(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) I, II — Create a 2/2 white Knight creature token with vigilance. III — Knights you control get +2/+1 until end of turn." ,"1WW");
+insert into card values ("The Mirari Conjecture", "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) I — Return target instant card from your graveyard to your hand. II — Return target sorcery card from your graveyard to your hand. III — Until end of turn, whenever you cast an instant or sorcery spell, copy it. You may choose new targets for the copy.","4U");
+insert into card values ("Embercleave","Flash. This spell costs {1} less to cast for each attacking creature you control. When Embercleave enters the battlefield, attach it to target creature you control. Equipped creature gets +1/+1 and has double strike and trample. Equip {3}" ,"4RR");
+insert into card values ("Giant's Skewer", "Equipped creature gets +2/+1. Whenever equipped creature deals combat damage to a creature, create a Food token. (It’s an artifact with “{2}, {T}, Sacrifice this artifact: You gain 3 life.”) Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.","1B");
+insert into card values("Black Lotus", "{T}, Sacrifice Black Lotus: Add three mana of any one color.", "0");
+insert into card values("Sol Ring", "{T}: Add {C}{C}.", "0");
+insert into card values("Experimental Frenzy","Experimental Frenzy {3}{R}","3R");
 
 
 
@@ -75,7 +81,6 @@ insert into creature values ("Hero of Precinct One","2","2");
 insert into creature values ("Knight of the Ebon Legion","1","2");
 insert into creature values ("Basilica Bell-Haunt","3","4");
 
------------------------------------------------------------------------------------------------------------------------------------------------
 -- CREATURE_TYPE
 
 insert into creaturetype values("Elf","Race");
@@ -94,7 +99,6 @@ insert into creaturetype values("Knight","Class");
 insert into creaturetype values("Spirit","Race");
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
 -- CREATURE_IS
 
 insert into creature_is values("Llanowar Elves","Elf");
@@ -141,13 +145,13 @@ insert into nonpermanent values ("Lightning Bolt","Instant");
 insert into nonpermanent values ("Thought Erause","Sorcery");
 insert into nonpermanent values ("Cast Down","Instant");
 insert into nonpermanent values ("Escape to the Wild", "Sorcery")
------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- SPELLTYPE
 
 insert into spelltype values ("Arcane","Arcane is similar to a creature type in that it does not affect the casting of the spell, but there are several cards that interact with Arcane cards, most notably the cards with splice and Spiritcraft. Because Arcane was the parasitic part of the Splice onto Arcane mechanic (Arcane cards only appear in the Kamigawa block) its return is unlikely.If it would flavorfully fit, it could return in connection to another mechanic");
 insert into spelltype values ("Trap", "Traps may be cast as for their regular mana cost, but also have an alternative cost should specific events occur. Usually, traps have abilities that undo whatever has made their alternative cost possible; for instance, a Trap that was enabled by two lands entering the battlefield under an opponent's control would destroy two lands.");
 
------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- NONPERMANENT_IS
 
 insert into nonpermanent_is values ("Eye of Nowhere","Arcane");
@@ -173,7 +177,7 @@ insert into land values ("Endless Sands",0,1);
 
 insert into landtype values ("Desert","Desert is a nonbasic land type used for cards that depict a sandy or rocky region that is arid because of little rainfall and supports only sparse and widely spaced vegetation or no vegetation at all.");
 insert into landtype values ("Gate", "Gates are common lands which enter the battlefield tapped. They can tap for one mana, typically from a selection of two colors. The subtype Gate means nothing on its own, but many cards from Ravnica sets have cards that care about the player controlling Gates.");
------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- LAND_IS
 
 insert into land_is values ("Dimir Guildgate","Gate");
@@ -196,7 +200,35 @@ insert into land_produces values ("Endless Sands","colorless",1);
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+--OBJECT
+insert into object values ("History of Benalia", "Enchantment");
+insert into object values ("The Mirari Conjecture", "Enchantment");
+insert into object values ("Embercleave", "Artifact");
+insert into object values ("Giant's Skewer", "Artifact");
+insert into object values("Black Lotus", "Artifact");
+insert into object values("Sol Ring", "Artifact");
+insert into object values("Experimental Frenzy","Enchantment");
+
+--OBJECTTYPE
+
+insert into objecttype values("Equipment", "Equipment is an artifact subtype that has the equip keyword ability. By paying the equip cost, it attaches to a creature you control. If that creature leaves play, the Equipment becomes unattached and remains in play. Paying the equip cost also allows the Equipment to be moved from one creature to another.");
+insert into objecttype values("Saga","Saga is an enchantment subtype introduced in Dominaria and returned in Theros Beyond Death [2]. Each Saga tells the story of a key event from the the plane's past as it unfolds during each of your turns.[3] Saga cards are historic.");
+
+--OBJECT_IS
+
+insert into object_is values ("History of Benalia", "Saga");
+insert into object_is values ("The Mirari Conjecture", "Saga");
+insert into object_is values ("Embercleave", "Equipment");
+insert into object_is values ("Giant's Skewer", "Equipment");
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
