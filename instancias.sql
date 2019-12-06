@@ -123,9 +123,43 @@ insert into card values("Chandra, Awakened Inferno", "red");
 insert into card values("Teferi, Hero of Dominaria", "blue");
 insert into card values("Teferi, Hero of Dominaria","white");
 insert into card values("Sorin, Imperious Bloodlord", "black");
+----------------------------------------------------------------------------------------------------------------------------------------------
+-- KEYWORD
+insert into keyword values("Adapt","Adapt N” means “If this permanent has no +1/+1 counters on it, put N +1/+1 counters on it." ,"Activated" , 5);
+insert into keyword values("Flash","You may cast this spell any time you could cast an instant.","Static",1);
+insert into keyword values("Riot","Riot is a keyword ability, which allows you to choose between gaining a +1/+1 counter or haste when a creature enters the battlefield. It was introduced in Ravnica Allegiance for the Gruul Clans of Ravnica.", "ETB",5);
+insert into keyword values("Trample","This creature can deal excess combat damage to player or planeswalker it's attacking.","Static",1);
+insert into keyword values("Flying", "This creature can't be blocked except by creatures with flying and/or reach.","Static",1);
+insert into keyword values("Lifelink", "Damage dealt by this creature also causes you to gain that much life.","Static",1);
+insert into keyword values("First Strike", "This creature deals combat damage before creatures without first strike.","Static",1);
+insert into keyword values("Deathtouch","Any amount of damage this deals to a creature is enough to destroy it.", "Static",1);
+insert into keyword values("Surveil","To “surveil N” means to look at the top N cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.", "Activated",5);
+insert into keyword values("Cycling","Discard this card: Draw a card","Activated",3);
+insert into keyword values("Equip","Attach this permanent to target creature you control. Activate this ability only any time you could cast a sorcery.","Static",1);
+insert into keyword values("Haste","This creature can attack and {T} as soon as it comes under your control","Static", 1);
+insert into keyword values("Vigilance","Attacking doesn't cause this creature to tap.","Static", 1);
 
-
-
+-- CARD_HAS_KEYWORD
+insert into card_has_keyword values("Zegana, Utopian Speaker","Adapt");
+insert into card_has_keyword values("Merfolk Trickster","Flash");
+insert into card_has_keyword values("Skarrgan Hellkite","Riot");
+insert into card_has_keyword values("Skarrgan Hellkite","Flying");
+insert into card_has_keyword values("Skarrgan Hellkite","Haste");
+insert into card_has_keyword values("Gruul Spellbreaker","Riot");
+insert into card_has_keyword values("Gruul Spellbreaker","Trample");
+insert into card_has_keyword values("Gruul Spellbreaker","Haste");
+insert into card_has_keyword values("Lyra Dawnbringer","Flying");
+insert into card_has_keyword values("Lyra Dawnbringer","Lifelink");
+insert into card_has_keyword values("Lyra Dawnbringer","First Strike");
+insert into card_has_keyword values("Knight of the Ebon Legion", "Deathtouch");
+insert into card_has_keyword values("Thought Erasure", "Surveil");
+insert into card_has_keyword values("Desert of the True", "Cycling");
+insert into card_has_keyword values("Embercleave", "Equip");
+insert into card_has_keyword values("Giant's Skewer", "Equip");
+insert into card_has_keyword values("Nissa, Who Shakes the World", "Haste");
+insert into card_has_keyword values("Nissa, Who Shakes the World", "Vigilance");
+insert into card_has_keyword values("Sorin, Imperious Bloodlord", "Lifelink");
+insert into card_has_keyword values("Sorin, Imperious Bloodlord", "Deathtouch");
 
 
 
@@ -312,8 +346,6 @@ insert into planeswalker values("Sorin, Imperious Bloodlord", 4,"Sorin Markov");
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
-
-
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
