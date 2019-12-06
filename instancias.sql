@@ -181,6 +181,20 @@ insert into land_is values ("Gruul Guildgate","Gate");
 insert into land_is values ("Desert of the True","Desert");
 insert into land_is values ("Endless Sands","Desert");
 
+-- LAND_PRODUCES
+insert into land_produces values ("Forest","green",1);
+insert into land_produces values ("Mountain","red",1); 
+insert into land_produces values ("Island","blue",1); 
+insert into land_produces values ("Plains","white",1); 
+insert into land_produces values ("Swamp","black",1);  
+insert into land_produces values ("Dimir Guildgate","blue",1);
+insert into land_produces values ("Dimir Guildgate","black",1);
+insert into land_produces values ("Gruul Guildgate","green",1);
+insert into land_produces values ("Gruul Guildgate","red",1);
+insert into land_produces values ("Desert of the True","white",1);
+insert into land_produces values ("Endless Sands","colorless",1);
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
