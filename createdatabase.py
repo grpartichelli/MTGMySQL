@@ -9,11 +9,8 @@ mydb = mysql.connector.connect(
 
 cursor = mydb.cursor()
 
+cursor.execute("CREATE DATABASE mydatabase")
+cursor.execute("SHOW DATABASES")
 
-
-cursor.execute("SHOW TABLES")
-
-
-for i,x in enumerate(cursor):
-	print(x)
-print(i)
+for x in cursor:
+  print(x)
