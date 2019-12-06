@@ -38,8 +38,13 @@ insert into card values ("Basilica Bell-Haunt","When Basilica Bell-Haunt enters 
 
 insert into card values ("Ancestral Recall","Target player draws 3 cards.","U");
 insert into card values ("Eye of Nowhere","Return target permanent to its owner’s hand","UU"); 
-
-
+insert into card values ("Ethereal Haze","Prevent all damage that would be dealt by creatures this turn.","W"); 
+insert into card values ("Lavaball Trap","If an opponent had two or more lands enter the battlefield under their control this turn, you may pay {3}{R}{R} rather than pay this spell’s mana cost.Destroy two target lands. Lavaball Trap deals 4 damage to each creature.","6RR"); 
+insert into card values ("Baloth Cage Trap","If an opponent had an artifact enter the battlefield under their control this turn, you may pay {1}{G} rather than pay this spell’s mana cost.Create a 4/4 green Beast creature token.","3GG"); 
+insert into card values ("Lightning Bolt","Lightning Bolt deals 3 damage to any target.","R");
+insert into card values ("Thought Erasure","Target opponent reveals their hand. You choose a nonland card from it. That player discards that card.","UB");
+insert into card values ("Cast Down","Destroy target nonlegendary creature.","1B");
+insert into card values("Escape to the Wild","Exile the top five cards of your library. You may play cards exiled this way until the end of your next turn.You may play an additional land this turn." ,"3RG");
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 -- CREATURE
@@ -115,7 +120,13 @@ insert into creature_is values("Basilica Bell-Haunt","Spirit");
 -- NONPERMANENT
 insert into nonpermanent values ("Ancestral Recall","Instant");
 insert into nonpermanent values ("Eye of Nowhere","Sorcery");
-
+insert into nonpermanent values ("Ethereal Haze","Instant");
+insert into nonpermanent values ("Lavaball Trap","Instant");
+insert into nonpermanent values ("Baloth Cage Trap","Instant");
+insert into nonpermanent values ("Lightning Bolt","Instant");
+insert into nonpermanent values ("Thought Erause","Sorcery");
+insert into nonpermanent values ("Cast Down","Instant");
+insert into nonpermanent values ("Escape to the Wild", "Sorcery")
 -----------------------------------------------------------------------------------------------------------------------------------------------
 -- SPELLTYPE
 
@@ -126,6 +137,9 @@ insert into spelltype values ("Trap", "Traps may be cast as for their regular ma
 -- NONPERMANENT_IS
 
 insert into nonpermanent_is values ("Eye of Nowhere","Arcane");
+insert into nonpermanent_is values ("Ethereal Haze","Arcane");
+insert into nonpermanent_is values ("Lavaball Trap","Trap");
+insert into nonpermanent_is values ("Baloth Cage Trap","Trap");
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
