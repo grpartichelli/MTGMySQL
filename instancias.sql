@@ -64,6 +64,10 @@ insert into card values("Black Lotus", "{T}, Sacrifice Black Lotus: Add three ma
 insert into card values("Sol Ring", "{T}: Add {C}{C}.", "0");
 insert into card values("Experimental Frenzy","Experimental Frenzy {3}{R}","3R");
 
+insert into card values("Nissa, Who Shakes the World", "Whenever you tap a Forest for mana, add an additional {G}. +1: Put three +1/+1 counters on up to one target noncreature land you control. Untap it. It becomes a 0/0 Elemental creature with vigilance and haste that’s still a land. −8: You get an emblem with “Lands you control have indestructible.” Search your library for any number of Forest cards, put them onto the battlefield tapped, then shuffle your library.", "3GG");
+insert into card values("Chandra, Awakened Inferno", "This spell can’t be countered. +2: Each opponent gets an emblem with “At the beginning of your upkeep, this emblem deals 1 damage to you.” −3: Chandra, Awakened Inferno deals 3 damage to each non-Elemental creature. −X: Chandra, Awakened Inferno deals X damage to target creature or planeswalker. If a permanent dealt damage this way would die this turn, exile it instead.", "4RR");
+insert into card values("Teferi, Hero of Dominaria", "+1: Draw a card. At the beginning of the next end step, untap up to two lands. −3: Put target nonland permanent into its owner’s library third from the top. −8: You get an emblem with “Whenever you draw a card, exile target permanent an opponent controls.”", "3WU");
+insert into card values("Sorin, Imperious Bloodlord", "+1: Target creature you control gains deathtouch and lifelink until end of turn. If it’s a Vampire, put a +1/+1 counter on it. +1: You may sacrifice a Vampire. When you do, Sorin, Imperious Bloodlord deals 3 damage to any target and you gain 3 life. −3: You may put a Vampire creature card from your hand onto the battlefield.", "2B");
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -224,6 +228,30 @@ insert into object_is values ("Giant's Skewer", "Equipment");
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+-- PLANE 
+insert into plane values("Zendikar",2,"Setting for the original Zendikar block and its sequel, is a plane with powerful sources of mana, which flows differently there. Its riches in mana and other wealth has made it a destination for Planeswalkers to explore and exploit. The promise of this is also enough to lure in various local explorers and adventurers.");
+insert into plane values("Kaladesh",5,"Kaladesh is a plane where aether manifests more than on other planes, being present in the atmosphere. Kaladesh was introduced in Origins as the home plane of Chandra Nalaar.Slightly over a year later, it was the setting for a block of the same name.");
+insert into plane values("Dominaria",1 ,"Dominaria  is a plane whose name means Song of Dominia. Nicol Bolas once claimed that he had coined this name himself.[2] Dominaria was the Nexus of the Multiverse before the Mending.[3] It is the setting for the majority of Magic storylines. All early sets except for Arabian Nights and Homelands take place there; the Weatherlight Saga dealt with a devastating invasion of this world. After Scourge, storylines have been traveling to a different plane each block, though Dominaria has been revisited in the Time Spiral block and the eponymous Dominaria. The Serra Angels referred to the plane of Dominaria as The Wheel because what happens there affects many other planes.");
+insert into plane values("Innistrad",1,"The plane is primarily populated by Humans but these live in fear of a number of classical creatures of horror and regularly fall prey to Zombies, Werewolves, Vampires or Ghosts. Further, Demons are becoming an ever growing threat. It is the plane where the Innistrad block takes place. Life on Innistrad is dominated by the single moon in its sky. Though the inhabitants of the plane know little about it, the moon drives the seasons and also hunting patterns of the monsters, harvests of the humans, etc.");
+
+-- CHARACTERW
+
+insert into characterw values("Nissa Revane","Elf","Zendikar");
+insert into characterw values("Chandra Nalaar","Human", "Kaladesh");
+insert into characterw values("Teferi","Human", "Dominaria");
+insert into characterw values("Sorin Markov","Vampire","Innistrad");
+
+
+
+
+-- PLANESWALKER
+
+insert into planeswalker values("Nissa, Who Shakes the World", 5,"Nissa Revane");
+insert into planeswalker values("Chandra, Awakened Inferno", 6,"Chandra Nalaar" );
+insert into planeswalker values("Teferi, Hero of Dominaria", 4,"Teferi");
+insert into planeswalker values("Sorin, Imperious Bloodlord", 4,"Sorin Markov");
+
+
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
