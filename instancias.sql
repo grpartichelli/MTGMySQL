@@ -46,6 +46,20 @@ insert into card values ("Thought Erasure","Target opponent reveals their hand. 
 insert into card values ("Cast Down","Destroy target nonlegendary creature.","1B");
 insert into card values("Escape to the Wild","Exile the top five cards of your library. You may play cards exiled this way until the end of your next turn.You may play an additional land this turn." ,"3RG");
 
+insert into card values ("Forest","{T}: Add {G}","");
+insert into card values ("Mountain","{T}: Add {R}",""); 
+insert into card values ("Island","{T}: Add {U}",""); 
+insert into card values ("Plains","{T}: Add {W}",""); 
+insert into card values ("Swamp","{T}: Add {B}","");
+insert into card values ("Dimir Guildgate","Dimir Guildgate enters the battlefield tapped. {T}: Add {U} or {B}.","");
+insert into card values ("Gruul Guildgate","Gruul Guildgate enters the battlefield tapped. {T}: Add {R} or {G}.","");
+insert into card values ("Desert of the True","Desert of the True enters the battlefield tapped. {T}: Add {W}. Cycling {1}{W} ({1}{W}, Discard this card: Draw a card.)","");
+insert into card values ("Endless Sands","{T}: Add {C}. {2}, {T}: Exile target creature you control. {4}, {T}, Sacrifice Endless Sands: Return each creature card exiled with Endless Sands to the battlefield under its owner’s control.","");
+
+
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 -- CREATURE
 
@@ -143,7 +157,29 @@ insert into nonpermanent_is values ("Baloth Cage Trap","Trap");
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+-- LAND
+
+insert into land values ("Forest",1,0);
+insert into land  values ("Mountain",1,0); 
+insert into land  values ("Island",1,0); 
+insert into land  values ("Plains",1,0); 
+insert into land  values ("Swamp",1,0);  
+insert into land values ("Dimir Guildgate",0,0);
+insert into land values ("Gruul Guildgate",0,0);
+insert into land values ("Desert of the True",0,1);
+insert into land values ("Endless Sands",0,1);
+
+-- LANDTYPE
+
+insert into landtype values ("Desert","Desert is a nonbasic land type used for cards that depict a sandy or rocky region that is arid because of little rainfall and supports only sparse and widely spaced vegetation or no vegetation at all.");
+insert into landtype values ("Gate", "Gates are common lands which enter the battlefield tapped. They can tap for one mana, typically from a selection of two colors. The subtype Gate means nothing on its own, but many cards from Ravnica sets have cards that care about the player controlling Gates.");
 -----------------------------------------------------------------------------------------------------------------------------------------------
+-- LAND_IS
+
+insert into land_is values ("Dimir Guildgate","Gate");
+insert into land_is values ("Gruul Guildgate","Gate");
+insert into land_is values ("Desert of the True","Desert");
+insert into land_is values ("Endless Sands","Desert");
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
