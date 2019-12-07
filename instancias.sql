@@ -9,7 +9,7 @@ insert into color values("colorless", "Artifacts", "An object (a card or spell) 
 
 -- SELECT * from color
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- --------------------------------------------------------------------------------------------------------------------------------------------
 
 -- FORMAT 
 
@@ -20,7 +20,7 @@ insert into format values("vintage","Vintage, originally known as Type I, is an 
 
 -- SELECT * from format
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- --------------------------------------------------------------------------------------------------------------------------------------------
 
 -- CARD
 
@@ -70,7 +70,7 @@ insert into card values("Teferi, Hero of Dominaria", "+1: Draw a card. At the be
 insert into card values("Sorin, Imperious Bloodlord", "+1: Target creature you control gains deathtouch and lifelink until end of turn. If it’s a Vampire, put a +1/+1 counter on it. +1: You may sacrifice a Vampire. When you do, Sorin, Imperious Bloodlord deals 3 damage to any target and you gain 3 life. −3: You may put a Vampire creature card from your hand onto the battlefield.", "2B");
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- --------------------------------------------------------------------------------------------------------------------------------------------
 -- CARD_HAS_COLOR
 
 insert into card_has_color values("Llanowar Elves","green");
@@ -92,7 +92,7 @@ insert into card_has_color values("Basilica Bell-Haunt","black");
 insert into card_has_color values("Ancestral Recall","blue");
 insert into card_has_color values("Eye of Nowhere","blue");
 insert into card_has_color values("Ethereal Haze","white");
-insert into card_has_color values("Lavaball Traps","red");
+insert into card_has_color values("Lavaball Trap","red");
 insert into card_has_color values("Baloth Cage Trap","green");
 insert into card_has_color values("Lightning Bolt","red");
 insert into card_has_color values("Thought Erasure","blue");	
@@ -125,7 +125,7 @@ insert into card values("Chandra, Awakened Inferno", "red");
 insert into card values("Teferi, Hero of Dominaria", "blue");
 insert into card values("Teferi, Hero of Dominaria","white");
 insert into card values("Sorin, Imperious Bloodlord", "black");
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- --------------------------------------------------------------------------------------------------------------------------------------------
 -- KEYWORD
 insert into keyword values("Adapt","Adapt N” means “If this permanent has no +1/+1 counters on it, put N +1/+1 counters on it." ,"Activated" , 5);
 insert into keyword values("Flash","You may cast this spell any time you could cast an instant.","Static",1);
@@ -165,7 +165,7 @@ insert into card_has_keyword values("Sorin, Imperious Bloodlord", "Deathtouch");
 
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- --------------------------------------------------------------------------------------------------------------------------------------------
 -- CREATURE
 
 insert into creature values("Llanowar Elves","1","1");
@@ -233,7 +233,7 @@ insert into creature_is values("Basilica Bell-Haunt","Spirit");
 
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------------------------
 -- NONPERMANENT
 insert into nonpermanent values ("Ancestral Recall","Instant");
 insert into nonpermanent values ("Eye of Nowhere","Sorcery");
@@ -259,7 +259,7 @@ insert into nonpermanent_is values ("Lavaball Trap","Trap");
 insert into nonpermanent_is values ("Baloth Cage Trap","Trap");
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------------------------
 -- LAND
 
 insert into land values ("Forest",1,0);
@@ -298,8 +298,8 @@ insert into land_produces values ("Desert of the True","white",1);
 insert into land_produces values ("Endless Sands","colorless",1);
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
---OBJECT
+-- ---------------------------------------------------------------------------------------------------------------------------------------------
+-- OBJECT
 insert into object values ("History of Benalia", "Enchantment");
 insert into object values ("The Mirari Conjecture", "Enchantment");
 insert into object values ("Embercleave", "Artifact");
@@ -308,12 +308,12 @@ insert into object values("Black Lotus", "Artifact");
 insert into object values("Sol Ring", "Artifact");
 insert into object values("Experimental Frenzy","Enchantment");
 
---OBJECTTYPE
+-- OBJECTTYPE
 
 insert into objecttype values("Equipment", "Equipment is an artifact subtype that has the equip keyword ability. By paying the equip cost, it attaches to a creature you control. If that creature leaves play, the Equipment becomes unattached and remains in play. Paying the equip cost also allows the Equipment to be moved from one creature to another.");
 insert into objecttype values("Saga","Saga is an enchantment subtype introduced in Dominaria and returned in Theros Beyond Death [2]. Each Saga tells the story of a key event from the the plane's past as it unfolds during each of your turns.[3] Saga cards are historic.");
 
---OBJECT_IS
+-- OBJECT_IS
 
 insert into object_is values ("History of Benalia", "Saga");
 insert into object_is values ("The Mirari Conjecture", "Saga");
@@ -322,7 +322,7 @@ insert into object_is values ("Giant's Skewer", "Equipment");
 
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------------------------
 -- PLANE 
 insert into plane values("Zendikar",2,"Setting for the original Zendikar block and its sequel, is a plane with powerful sources of mana, which flows differently there. Its riches in mana and other wealth has made it a destination for Planeswalkers to explore and exploit. The promise of this is also enough to lure in various local explorers and adventurers.");
 insert into plane values("Kaladesh",5,"Kaladesh is a plane where aether manifests more than on other planes, being present in the atmosphere. Kaladesh was introduced in Origins as the home plane of Chandra Nalaar.Slightly over a year later, it was the setting for a block of the same name.");
@@ -349,7 +349,7 @@ insert into planeswalker values("Teferi, Hero of Dominaria", 4,"Teferi");
 insert into planeswalker values("Sorin, Imperious Bloodlord", 4,"Sorin Markov");
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- --------------------------------------------------------------------------------------------------------------------------------------------
 -- CARDSET
 insert into cardset values("RNA","Ravnica Allegiance",259, "2019-01-25" , "Ravnica");
 insert into cardset values("M19","Core Set 2019",280, "2018-06-13" , null);
@@ -409,7 +409,7 @@ insert into printversion values(169,"WAR","Nissa, Who Shakes the World","Rare","
 insert into printversion values(127,"M20","Chandra, Awakened Inferno","Mythic Rare","Chris Rahn","");
 insert into printversion values(207,"DOM","Teferi, Hero of Dominaria","Mythic Rare","Chris Rallis","");
 insert into printversion values(115,"M20","Sorin, Imperious Bloodlord","Mythic Rare","Chase Stone","");
------------------------------------------------------------------------------------------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------------------------
 -- RESTRICTED
 
 insert into restricted values("Black Lotus","vintage");

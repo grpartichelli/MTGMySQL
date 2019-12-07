@@ -10,8 +10,7 @@ mydb = mysql.connector.connect(
 cursor = mydb.cursor()
 
 
-
-cursor.execute("SHOW TABLES")
+cursor.execute("SHOW DATABASES")
 
 
 for i,x in enumerate(cursor):
