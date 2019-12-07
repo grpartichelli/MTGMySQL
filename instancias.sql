@@ -120,11 +120,11 @@ insert into card_has_color values("Black Lotus", "colorless");
 insert into card_has_color values("Sol Ring", "colorless");
 insert into card_has_color values("Experimental Frenzy", "red");
 
-insert into card values("Nissa, Who Shakes the World", "green");
-insert into card values("Chandra, Awakened Inferno", "red");
-insert into card values("Teferi, Hero of Dominaria", "blue");
-insert into card values("Teferi, Hero of Dominaria","white");
-insert into card values("Sorin, Imperious Bloodlord", "black");
+insert into card_has_color values("Nissa, Who Shakes the World", "green");
+insert into card_has_color values("Chandra, Awakened Inferno", "red");
+insert into card_has_color values("Teferi, Hero of Dominaria", "blue");
+insert into card_has_color values("Teferi, Hero of Dominaria","white");
+insert into card_has_color values("Sorin, Imperious Bloodlord", "black");
 -- --------------------------------------------------------------------------------------------------------------------------------------------
 -- KEYWORD
 insert into keyword values("Adapt","Adapt N” means “If this permanent has no +1/+1 counters on it, put N +1/+1 counters on it." ,"Activated" , 5);
@@ -241,9 +241,9 @@ insert into nonpermanent values ("Ethereal Haze","Instant");
 insert into nonpermanent values ("Lavaball Trap","Instant");
 insert into nonpermanent values ("Baloth Cage Trap","Instant");
 insert into nonpermanent values ("Lightning Bolt","Instant");
-insert into nonpermanent values ("Thought Erause","Sorcery");
+insert into nonpermanent values ("Thought Erasure","Sorcery");
 insert into nonpermanent values ("Cast Down","Instant");
-insert into nonpermanent values ("Escape to the Wild", "Sorcery")
+insert into nonpermanent values ("Escape to the Wild", "Sorcery");
 
 -- SPELLTYPE
 
