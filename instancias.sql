@@ -409,11 +409,40 @@ insert into printversion values(169,"WAR","Nissa, Who Shakes the World","Rare","
 insert into printversion values(127,"M20","Chandra, Awakened Inferno","Mythic Rare","Chris Rahn","");
 insert into printversion values(207,"DOM","Teferi, Hero of Dominaria","Mythic Rare","Chris Rallis","");
 insert into printversion values(115,"M20","Sorin, Imperious Bloodlord","Mythic Rare","Chase Stone","");
-
-
-
-
 -----------------------------------------------------------------------------------------------------------------------------------------------
+-- RESTRICTED
 
------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------
+insert into restricted values("Black Lotus","vintage");
+insert into restricted values("Sol Ring","vintage");
+insert into restricted values("Ancestral Recall","vintage");
+
+
+-- BANNED
+
+
+insert into banned values("Black Lotus","legacy");
+insert into banned values("Sol Ring","legacy");
+insert into banned values("Ancestral Recall","legacy");
+
+insert into banned values("Black Lotus","modern");
+insert into banned values("Sol Ring","modern");
+insert into banned values("Ancestral Recall","modern");
+
+
+insert into banned values("Hero of Precinct One","standard");
+insert into banned values("Merfolk Trickster","standard");
+insert into banned values("Teferi, Hero of Dominaria","standard");
+insert into banned values("Desert of the True","standard");
+insert into banned values("Endless Sands","standard");
+insert into banned values("History of Benalia","standard");
+insert into banned values("The Mirari Conjecture","standard");
+insert into banned values("Lightning Bolt","standard");
+insert into banned values("Cast Down","standard");
+insert into banned values("Baloth Cage Trap","standard");
+insert into banned values("Lavaball Trap","standard");
+insert into banned values("Ethereal Haze","standard");
+insert into banned values("Eye of Nowhere","standard");
+
+
+
+
