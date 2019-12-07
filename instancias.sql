@@ -55,6 +55,8 @@ insert into card values ("Dimir Guildgate","Dimir Guildgate enters the battlefie
 insert into card values ("Gruul Guildgate","Gruul Guildgate enters the battlefield tapped. {T}: Add {R} or {G}.","");
 insert into card values ("Desert of the True","Desert of the True enters the battlefield tapped. {T}: Add {W}. Cycling {1}{W} ({1}{W}, Discard this card: Draw a card.)","");
 insert into card values ("Endless Sands","{T}: Add {C}. {2}, {T}: Exile target creature you control. {4}, {T}, Sacrifice Endless Sands: Return each creature card exiled with Endless Sands to the battlefield under its owner’s control.","");
+insert into card values ("Lotus Vale","If Lotus Vale would enter the battlefield, sacrifice two untapped lands instead. If you do, put Lotus Vale onto the battlefield. If you don’t, put it into its owner’s graveyard. {T}: Add three mana of any one color.","");
+insert into card values ("Azorius Chancery","Azorius Chancery enters the battlefield tapped. When Azorius Chancery enters the battlefield, return a land you control to its owner’s hand.{T}: Add {W}{U}.","");
 
 insert into card values ("History of Benalia","(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) I, II — Create a 2/2 white Knight creature token with vigilance. III — Knights you control get +2/+1 until end of turn." ,"1WW");
 insert into card values ("The Mirari Conjecture", "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.) I — Return target instant card from your graveyard to your hand. II — Return target sorcery card from your graveyard to your hand. III — Until end of turn, whenever you cast an instant or sorcery spell, copy it. You may choose new targets for the copy.","4U");
@@ -110,6 +112,8 @@ insert into card_has_color values ("Dimir Guildgate","colorless");
 insert into card_has_color values ("Gruul Guildgate","colorless");
 insert into card_has_color values ("Desert of the True","colorless");
 insert into card_has_color values ("Endless Sands","colorless");
+insert into card_has_color values ("Lotus Vale","colorless");
+insert into card_has_color values ("Azorius Chancery","colorless");
 
 
 insert into card_has_color values ("History of Benalia","white");
@@ -271,6 +275,8 @@ insert into land values ("Dimir Guildgate",0,0);
 insert into land values ("Gruul Guildgate",0,0);
 insert into land values ("Desert of the True",0,1);
 insert into land values ("Endless Sands",0,1);
+insert into land values ("Azorius Chancery",0,0);
+insert into land values ("Lotus Vale",0,0);
 
 -- LANDTYPE
 
@@ -296,7 +302,13 @@ insert into land_produces values ("Gruul Guildgate","green",1);
 insert into land_produces values ("Gruul Guildgate","red",1);
 insert into land_produces values ("Desert of the True","white",1);
 insert into land_produces values ("Endless Sands","colorless",1);
-
+insert into land_produces values ("Azorius Chancery","blue",2);
+insert into land_produces values ("Azorius Chancery","white",2);
+insert into land_produces values ("Lotus Vale","white",3);
+insert into land_produces values ("Lotus Vale","red",3);
+insert into land_produces values ("Lotus Vale","blue",3);
+insert into land_produces values ("Lotus Vale","green",3);
+insert into land_produces values ("Lotus Vale","black",3);
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------------
 -- OBJECT
@@ -398,6 +410,8 @@ insert into printversion values(245,"GRN","Dimir Guildgate","Common","Cliff Chil
 insert into printversion values(249,"GRN","Gruul Guildgate","Common","Alexander Forssberg","“Beyond this gate there are no citizens, only predators and prey.”—Domri Rade");
 insert into printversion values(174,"HOU","Desert of the True","Common","Jung Park","");
 insert into printversion values(176,"HOU","Endless Sands","Rare","Noah Bradley","");
+insert into printversion values(131,"HOU","Lotus Vale","Common","John Avon","At what price beauty?");
+insert into printversion values(122,"HOU","Azorius Chancery","Uncommon","John Avon","");
 insert into printversion values(21,"DOM","History of Benalia","Mythic Rare","Noah Bradley","");
 insert into printversion values(57,"DOM","The Mirari Conjecture","Rare","James Arnold","");
 insert into printversion values(120,"ELD","Embercleave","Mythic Rare"," Joe Slucher","");
@@ -429,6 +443,9 @@ insert into banned values("Sol Ring","modern");
 insert into banned values("Ancestral Recall","modern");
 
 
+insert into banned values("Black Lotus","standard");
+insert into banned values("Sol Ring","standard");
+insert into banned values("Ancestral Recall","standard");
 insert into banned values("Hero of Precinct One","standard");
 insert into banned values("Merfolk Trickster","standard");
 insert into banned values("Teferi, Hero of Dominaria","standard");
