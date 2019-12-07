@@ -68,6 +68,8 @@ insert into card values("Nissa, Who Shakes the World", "Whenever you tap a Fores
 insert into card values("Chandra, Awakened Inferno", "This spell can’t be countered. +2: Each opponent gets an emblem with “At the beginning of your upkeep, this emblem deals 1 damage to you.” −3: Chandra, Awakened Inferno deals 3 damage to each non-Elemental creature. −X: Chandra, Awakened Inferno deals X damage to target creature or planeswalker. If a permanent dealt damage this way would die this turn, exile it instead.", "4RR");
 insert into card values("Teferi, Hero of Dominaria", "+1: Draw a card. At the beginning of the next end step, untap up to two lands. −3: Put target nonland permanent into its owner’s library third from the top. −8: You get an emblem with “Whenever you draw a card, exile target permanent an opponent controls.”", "3WU");
 insert into card values("Sorin, Imperious Bloodlord", "+1: Target creature you control gains deathtouch and lifelink until end of turn. If it’s a Vampire, put a +1/+1 counter on it. +1: You may sacrifice a Vampire. When you do, Sorin, Imperious Bloodlord deals 3 damage to any target and you gain 3 life. −3: You may put a Vampire creature card from your hand onto the battlefield.", "2B");
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 -- CARD_HAS_COLOR
 
@@ -326,6 +328,10 @@ insert into plane values("Zendikar",2,"Setting for the original Zendikar block a
 insert into plane values("Kaladesh",5,"Kaladesh is a plane where aether manifests more than on other planes, being present in the atmosphere. Kaladesh was introduced in Origins as the home plane of Chandra Nalaar.Slightly over a year later, it was the setting for a block of the same name.");
 insert into plane values("Dominaria",1 ,"Dominaria  is a plane whose name means Song of Dominia. Nicol Bolas once claimed that he had coined this name himself.[2] Dominaria was the Nexus of the Multiverse before the Mending.[3] It is the setting for the majority of Magic storylines. All early sets except for Arabian Nights and Homelands take place there; the Weatherlight Saga dealt with a devastating invasion of this world. After Scourge, storylines have been traveling to a different plane each block, though Dominaria has been revisited in the Time Spiral block and the eponymous Dominaria. The Serra Angels referred to the plane of Dominaria as The Wheel because what happens there affects many other planes.");
 insert into plane values("Innistrad",1,"The plane is primarily populated by Humans but these live in fear of a number of classical creatures of horror and regularly fall prey to Zombies, Werewolves, Vampires or Ghosts. Further, Demons are becoming an ever growing threat. It is the plane where the Innistrad block takes place. Life on Innistrad is dominated by the single moon in its sky. Though the inhabitants of the plane know little about it, the moon drives the seasons and also hunting patterns of the monsters, harvests of the humans, etc.");
+insert into plane values("Ravnica",1,"Ravnica is a plane whose main planet is covered in a large city, also referred to as Ravnica.[2][3] It takes its flavor from that of Eastern Europe. Ravnica is the setting of the Ravnica block, Return to Ravnica block and Guilds of Ravnica, Ravnica Allegiance, and War of the Spark expansions.");
+insert into plane values("Amonkhet",5,"Liliana believed the plane was created by Nicol Bolas before the Mending, when a planeswalker would still have had the power to do so,[2] though Nissa later discovered that Bolas had instead corrupted a pre-existing plane and warped its culture to worship him instead.[3] Bolas had engineered a world where the inhabitants reach maximum physical perfection before killing one another in the Trials.");
+insert into plane values("Kamigawa",7,"The world of Kamigawa, positioned far from any other world we know, is governed by the interplay between the mortals and the kami, minor gods or spirits of the world. The Kakuriyo or Reikai is the spirit world where the kami dwell; its other half is that of the Utsushiyo where mortals live. Together they form a sphere that makes the whole of the world.");
+insert into plane values("Eldraine",5,"Eldraine is a medieval world filled with knights, castles and magical creatures. Wild magic is woven through the heart of the plane and two opposing but intertwined sides battle over it, impossible to untangle one from the other.");
 
 -- CHARACTERW
 
@@ -341,6 +347,68 @@ insert into planeswalker values("Nissa, Who Shakes the World", 5,"Nissa Revane")
 insert into planeswalker values("Chandra, Awakened Inferno", 6,"Chandra Nalaar" );
 insert into planeswalker values("Teferi, Hero of Dominaria", 4,"Teferi");
 insert into planeswalker values("Sorin, Imperious Bloodlord", 4,"Sorin Markov");
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+-- CARDSET
+insert into cardset values("RNA","Ravnica Allegiance",259, "2019-01-25" , "Ravnica");
+insert into cardset values("M19","Core Set 2019",280, "2018-06-13" , null);
+insert into cardset values("M12","Core Set 2012",249, "2011-01-15" , null);
+insert into cardset values("DOM","Dominaria",269 , "2018-04-27" , "Dominaria");
+insert into cardset values("M20","Core Set 2020",280, "2019-06-12" , null);
+insert into cardset values("LEA","Limited Edition Alpha",295, "1993-08-05" , "Dominaria");
+insert into cardset values("CHK","Champions of Kamigawa",306, "2004-10-01" , "Kamigawa");
+insert into cardset values("ZEN","Zendikar",249, "2009-10-02" , "Zendikar");
+insert into cardset values("ELD","Throne of Eldraine",269, "2019-10-04" , "Eldraine");
+insert into cardset values("GRN","Guilds of Ravnica",259, "2018-10-05" , "Ravnica");
+insert into cardset values("HOU","Hour of Devastation",199, "2017-06-14" , "Amonkhet");
+insert into cardset values("WAR","War of The Spark",264, "2010-05-03" , "Ravnica");
+insert into cardset values("M10","Core Set 2010",240, "2010-03-12" , null);
+
+
+-- PRINTVERSION
+insert into printversion values(314,"M19","Llanowar Elves","Common","Chris Rahn","As patient and generous as life, as harsh and merciless as nature.");
+insert into printversion values(182,"M12","Llanowar Elves","Common","Victor Adame Minguez","One bone broken for every twig snapped underfoot. —Llanowar penalty for trespassing");
+insert into printversion values(314,"RNA","Frilled Mystic","Uncommon","Randy Vargas","Your arrival was expected…and unwelcome.");
+insert into printversion values(214,"RNA","Zegana, Utopian Speaker","Rare","Slawomir Maniak","");
+insert into printversion values(56,"DOM","Merfolk Trickster","Uncommon","Jesper Ejsing","Saved from destruction by one planeswalker’s sacrifice, the Eliterate colony forswore the taking of life.");
+insert into printversion values(159,"M20","Scorch Spitter","Common","Johan Grenier","“Yes, she can be a nuisance. But at least my tea never gets cold.”—Marlan Farthwald, innkeeper");
+insert into printversion values(114,"RNA","Skarrgan Hellkite","Mythic Rare","Svetlin Velinov","");
+insert into printversion values(179,"RNA","Gruul Spellbreaker","Rare","Zoltan Boros","She displays her scars with pride.");
+insert into printversion values(26,"DOM","Lyra Dawnbringer","Mythic Rare","Chris Rahn","You are not alone. You never were.");
+insert into printversion values(11,"RNA","Hero of Precinct One","Rare","Bram Sels","When the established order falters, what remains are ordinary people and their struggle to survive.");
+insert into printversion values(105,"M20","Knight of the Ebon Legion","Rare","Alex Konstad","");
+insert into printversion values(156,"RNA","Basilica Bell-Haunt","Uncommon","Yeong-Hao Han","You can hear their tolling only when your debt is due.");
+insert into printversion values(32,"LEA","Ancestral Recall","Common","Mark Poole","");
+insert into printversion values(56,"CHK","Eye of Nowhere","Common","Alan Pollack","“Once we prayed to the kaijin for safe voyage. Now we only pray that we can escape their gaze.” —Hayato, master sailor");
+insert into printversion values(9,"CHK","Ethereal Haze","Common","Chris Appelhans","“Imagine a dove flying through smoke. Does the dove injure the smoke? Does the smoke impede the dove?” —Teachings of Eight-and-a-Half-Tails");
+insert into printversion values(135,"ZEN","Lavaball Trap","Rare","Zoltan Boros & Gabor Szikszain","");
+insert into printversion values(156,"ZEN","Baloth Cage Trap","Uncommon","Austin Hsu","");
+insert into printversion values(146,"M10","Lightning Bolt","Common","Christopher Moeller","The sparkmage shrieked, calling on the rage of the storms of his youth. To his surprise, the sky responded with a fierce energy he’d never thought to see again.");
+insert into printversion values(161,"LEA","Lightning Bolt","Common"," Christopher Rush","");
+insert into printversion values(206,"RNA","Thought Erasure","Uncommon","Anna Steinbauer","It’s truly the highest honor, isn’t it? To be remembered? Pity for you.");
+insert into printversion values(81,"DOM","Cast Down","Uncommon","Bastien L. Deharme","“Your life is finished, your name lost, and your work forgotten. It is as though Mazeura never existed.” — Chainer’s Torment");
+insert into printversion values(189,"ELD","Escape to the Wild","Rare","Chris Ostrowski","The guards kindled the hearth and locked the door to Ellwen’s chamber. By morning, the fire was out and Ellwen was gone.");
+insert into printversion values(294,"LEA","Forest","Common","Christopher Rush","");
+insert into printversion values(292,"LEA","Mountain","Common","Douglas Shuler","");
+insert into printversion values(288,"LEA","Island","Common","Mark Poole","");
+insert into printversion values(286,"LEA","Plains","Common","Jesper Myrfors","");
+insert into printversion values(290,"LEA","Swamp","Common","Dan Frazier","");
+insert into printversion values(245,"GRN","Dimir Guildgate","Common","Cliff Childs","“Every guild dreads infiltration. I should know—I’ve been a member of all of them.”—Lazav");
+insert into printversion values(249,"GRN","Gruul Guildgate","Common","Alexander Forssberg","“Beyond this gate there are no citizens, only predators and prey.”—Domri Rade");
+insert into printversion values(174,"HOU","Desert of the True","Common","Jung Park","");
+insert into printversion values(176,"HOU","Endless Sands","Rare","Noah Bradley","");
+insert into printversion values(21,"DOM","History of Benalia","Mythic Rare","Noah Bradley","");
+insert into printversion values(57,"DOM","The Mirari Conjecture","Rare","James Arnold","");
+insert into printversion values(120,"ELD","Embercleave","Mythic Rare"," Joe Slucher","");
+insert into printversion values(91,"ELD","Giant's Skewer","Common","James Paick","");
+insert into printversion values(232,"LEA","Black Lotus","Mythic Rare","Christopher Rush","");
+insert into printversion values(269,"LEA","Sol Ring","Rare","Mark Tedin","");
+insert into printversion values(99,"GRN","Experimental Frenzy","Rare","Simon Dominic","Turns out coffee is the weird aunt of invention.");
+insert into printversion values(169,"WAR","Nissa, Who Shakes the World","Rare","Chris Rallis","");
+insert into printversion values(127,"M20","Chandra, Awakened Inferno","Mythic Rare","Chris Rahn","");
+insert into printversion values(207,"DOM","Teferi, Hero of Dominaria","Mythic Rare","Chris Rallis","");
+insert into printversion values(115,"M20","Sorin, Imperious Bloodlord","Mythic Rare","Chase Stone","");
 
 
 
