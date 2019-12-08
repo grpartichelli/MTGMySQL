@@ -6,7 +6,7 @@ SELECT  name, cardtext, power, toughness, manaC, color  FROM (creature natural j
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------
 select color,count(card) from (card_has_color natural join  (cardset join printversion on (code = cardset))) where cardset = "RNA" group by color order by count(card);
--- Retorn a quantidade de cartas de cada cor em um set especifico
+-- Retorna a quantidade de cartas de cada cor em um set especifico
 -- ---------------------------------------------------------------------------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------

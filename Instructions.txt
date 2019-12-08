@@ -1,1 +1,0 @@
-any: Allows you to use any mysql command.
