@@ -43,7 +43,7 @@ def any_function():
 
 flag = True
 while flag:
-	command = input("Insert your command: ").lower()
+	command = input("Insert your command: ").lower() 
 	clear()
 	
 	if command == "any":
