@@ -26,13 +26,20 @@ def execute_command(command):
 		cursor.execute(command)
 		result = cursor.fetchall()
 		display_result(result)
+		
 	except Exception as e:
-		print(e)
-	
+		if str(e) != "No result set to fetch from.":
+			print(e)
+		else:
+			print("Command worked.")
+			mydb.commit()
 
 def any_function():
-	command = input("Insert any MySql search: ")
-	execute_command(command)
+	command = input("Insert any MySQL command: ")
+	while command.lower() != "quit":
+		execute_command(command)
+		command = input("Insert any MySQL command: ")
+	clear()
 	
 
 
