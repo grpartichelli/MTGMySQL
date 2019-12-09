@@ -27,8 +27,9 @@ select name,cardtext from land natural join card where isBasic = 0 and name in (
 -- ---------------------------------------------------------------------------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------
-select nameF,explanationF from format where NOT EXISTS (select nameF from banned where card = "Teferi, Hero of Dominaria" and banned.format = format.nameF)
--- Retorna todos os formatos em que uma carta é permitida
+select card,format from banned as B where card <> 'Black Lotus' and NOT EXISTS (select * from banned where card = 'Black Lotus' and format not in (select format from banned where card = B.card))
+
+-- Retorna todos as cartas que são banidas em os mesmos formatos que uma certa carta (e possívelmente em outros)
 -- ---------------------------------------------------------------------------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------------------------------------------------------------------------

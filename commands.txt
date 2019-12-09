@@ -3,7 +3,7 @@ setcolor: Retorna a quantidade de cartas de cada cor em um set especifico
 bestkeywordcards: Retorna uma lista ordenada do número de keywords de cada carta em que a stormScale tem uma média baixa. Isso significa que as cartas nessa lista tem mais chance de serem imprimidas novamente.
 walkerbyrace: Retorna as cartas de todos os planeswalkers de uma certa raça.
 coloredlands: Retorna as cartas de terreno que não são básicos e produzem cor (não é colorless)
-isallowed: Retorna todos os formatos em que uma carta é permitida
+samebans: Retorna todos as cartas que são banidas em os mesmos formatos que uma certa carta (e possívelmente em outros).
 rares: Retorna todas as criaturas de uma certa cor que são raras.
 multicolored: Retorna todas as criaturas multicoloridas.
 commonkeywords: Para uma cor especifica, retorna uma lista de palavras-chaves que aparecem em cartas daquela cor, ordenada decrescentemente.

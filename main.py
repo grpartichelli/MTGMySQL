@@ -80,9 +80,9 @@ while flag:
 		execute_command("select name,cardtext from land natural join card where isBasic = 0 and name in (select distinct(land) from land_produces where color <> \"colorless\")")
 		continue
 
-	if command == "isallowed":
+	if command == "samebans":
 		card = input("Card you want to check: ")
-		execute_command("select nameF,explanationF from format where NOT EXISTS (select nameF from banned where card = \""+ card + "\" and banned.format = format.nameF)")
+		execute_command("select card,format from banned as B where card <> \""+card+"\" and NOT EXISTS (select * from banned where card = \""+card+"\" and format not in (select format from banned where card = B.card))")
 		continue
 
 	if command == "rares":
